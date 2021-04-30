@@ -25,3 +25,9 @@ For register Process all code available in java folder(src/main/jave)
 
 "Error Login if username and password not matches"
 ![image](https://user-images.githubusercontent.com/81795180/116694591-17608480-a9dd-11eb-85d9-485e9a8a24f2.png)
+
+"Database Connectivity Database and Table data storage"
+![image](https://user-images.githubusercontent.com/81795180/116694844-64445b00-a9dd-11eb-9d87-af4051a82990.png)
+
+![image](https://user-images.githubusercontent.com/81795180/116694925-84741a00-a9dd-11eb-8cca-3c80287c2883.png)
+
