@@ -18,10 +18,6 @@ public class AddServlet extends HttpServlet
 		
 		int k = i+j;
 		
-//		PrintWriter out = res.getWriter();
-//		out.println("The result is: "+ k);
-//		res.getWriter().println("The result is: "+ k);
-		
 		req.setAttribute("k", k);
 		
 		RequestDispatcher rd = req.getRequestDispatcher("sq");
