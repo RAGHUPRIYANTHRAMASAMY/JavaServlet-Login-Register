@@ -2,9 +2,9 @@
 
 Hi Bro,
 
-I kept all jsp file in webapp folder(src/main/webapp/)
-In java folder i created separate folder for login in that i done all login code(src/main/java/next/xadmin/login/ "3 different folders for three different files")
-For register Process all code available in java folder(src/main/jave)
+I kept all jsp file in webapp folder(src/main/webapp/) <br>
+In java folder i created separate folder for login in that i done all login code(src/main/java/next/xadmin/login/ "3 different folders for three different files")<br>
+For register Process all code available in java folder(src/main/jave)<br>
 
 **Output ScreenShort:**
 
