@@ -12,7 +12,7 @@ public class LoginDao {
 	
 	private String dburl ="jdbc:mysql://localhost:3306/userdb";
 	private String dbuname = "root";
-	private String dbpassword = "ZcMysqL@2021";
+	private String dbpassword = "********";
 	private String dbdriver = "com.mysql.jdbc.Driver";
 	
 	public void loadDriver(String dbDriver)
