@@ -1,0 +1,135 @@
+@charset "ISO-8859-1";
+
+body {
+    background-image: url(sign0.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 70px;
+  }
+
+#Navigation {
+    margin: 10px auto;
+}
+
+#Navigation a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+h3 {
+    margin-left: 50px;
+    font-family: 'Pacifico', cursive;
+}
+
+h3:hover {
+    text-shadow: 0px 0px 10px #ff9900;
+}
+
+h3 span {
+    margin-left: 75px;
+    font-family: 'Lobster', cursive;
+}
+
+/* #Navigation a:hover {
+    color: white;
+    text-shadow: 0 0 20px;
+} */
+
+/* #Navigation a:hover .fa-home {
+    color: blue;
+} */
+
+#Home {
+    margin-left: 70px;
+}
+
+#right {
+    float: right;
+}
+
+#aboutUs {
+    margin-right: 10px;
+}
+
+
+#Register {
+    margin-left: 10px;
+}
+
+#Contact {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+#SignUp {
+    margin: 60px auto;
+    width: 340px;
+    height: 480px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#SignUp:hover {
+    box-shadow: 0px 0px 25px 5px #00fff2;
+    transform: scale(1.01);
+    /* z-index: 2; */
+}
+
+#username, #email, #password, #phone {
+    border-radius: 20px;
+    padding: 8px;
+    width: 60%;
+    margin-bottom: 20px;
+    outline: none;
+    margin-left: 50px;
+    border-color: white;
+    box-shadow: 0px 0px 8px #9b50d4;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+    width: 40%;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    outline: none;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+hr {
+    width: 225px;
+    margin-left: 55px;
+}
+
+span p {
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+#Lodo {
+    margin-left: 80px;
+}
+
+::placeholder{
+    font-weight: bolder;
+}
