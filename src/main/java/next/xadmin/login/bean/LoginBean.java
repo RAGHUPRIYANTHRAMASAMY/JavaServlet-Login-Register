@@ -1,21 +1,19 @@
-package com.zc.login.bean;
+package next.xadmin.login.bean;
 
 public class LoginBean {
 	
-	private String username, password;
-
+	private String username;
+	private String password;
+	
 	public String getUsername() {
 		return username;
 	}
-
 	public void setUsername(String username) {
 		this.username = username;
 	}
-
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}

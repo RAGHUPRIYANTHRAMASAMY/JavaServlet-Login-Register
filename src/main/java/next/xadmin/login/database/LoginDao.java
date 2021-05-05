@@ -1,4 +1,4 @@
-package com.zc.login.database;
+package next.xadmin.login.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,56 +6,57 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.zc.login.bean.LoginBean;
+import next.xadmin.login.bean.LoginBean;
 
 public class LoginDao {
-
-	private String dburl ="jdbc:mysql://localhost:3306/loginregister";
+	
+	private String dburl ="jdbc:mysql://localhost:3306/userdb";
 	private String dbuname = "root";
-	private String dbpassword = "ZcMysqL@2021";
+	private String dbpassword = "********";
 	private String dbdriver = "com.mysql.jdbc.Driver";
 	
-	public void loadDriver(String dBDriver) {
+	public void loadDriver(String dbDriver)
+	{
 		try {
-			Class.forName(dBDriver);
+			Class.forName(dbDriver);
 		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
-	public Connection getConnection() {
+	public Connection getConnection()
+	{
 		Connection con = null;
-		
 		try {
 			con = DriverManager.getConnection(dburl, dbuname, dbpassword);
 		} catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		return con;
 	}
 	
-	public boolean validate(LoginBean logBean) {
+	public boolean validate(LoginBean loginBean) {
 		
 		loadDriver(dbdriver);
+		boolean status = false;
 		
 		Connection con = getConnection();
-		boolean status = false;
-		String sql = "select * from userdetails where username=? and password=?";
-		
+		String sql = "select * from login where username = ? and password=?";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, logBean.getUsername());
-			ps.setString(2, logBean.getPassword());
+			ps.setString(1, loginBean.getUsername());
+			ps.setString(2, loginBean.getPassword());
 			ResultSet rs = ps.executeQuery();
 			status = rs.next();
 			
 		} catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 		return status;
-		
 	}
 	
 }
